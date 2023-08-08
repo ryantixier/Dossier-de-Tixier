@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 // We assign them to their own variable names
 function Nav() {
   return (
-    <ul className="nav nav-tabs">
+    <ul
+      className="nav nav-tabs"
+      style={{
+        marginTop: "0px",
+      }}
+    >
       <Link to={"/"} className="nav-item" style={{ marginRight: "2rem" }}>
         Home
       </Link>
