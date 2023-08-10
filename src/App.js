@@ -1,11 +1,13 @@
+import React, { useState } from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Blog from "./pages/Blog";
 import Nav from "./components/Nav";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import backgroundImg from "./assets/images/lil-space-ryguy.jpeg";
-import Sparkles from "react-sparkle";
+import backgroundImg from "./assets/images/AstroRy.jpeg";
+import Sparkle from "react-sparkle";
+import Portfolio from "./pages/Portfolio";
+import Resume from "./pages/Resume";
+import "./App.css";
 
 function App() {
   return (
@@ -16,25 +18,28 @@ function App() {
         // minWidth: "1159px",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
+        position: "relative",
       }}
     >
-      <Sparkles
-        color="white"
-        count={20}
-        minSize={7}
-        maxSize={12}
-        overflowPx={80}
-        fadeOutSpeed={5}
-        flicker={false}
-      />
+      {/* <div style={{ position: "relative", width: "100%", height: "100%" }}> */}
+      {/* </div> */}
       <Router>
         <div className="flex-column justify-flex-start min-100-vh">
+          <Sparkle
+            color="white"
+            count={20}
+            minSize={7}
+            maxSize={12}
+            overflowPx={0}
+            fadeOutSpeed={1}
+            flicker={false}
+          />
           <div className="container">
             <Nav />
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/about" element={<About />} />
+              <Route path="/" element={<About />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/resume" element={<Resume />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </div>

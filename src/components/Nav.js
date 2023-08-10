@@ -1,33 +1,60 @@
+import React from "react";
 import { Link } from "react-router-dom";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import Divider from "@mui/material/Divider";
+import Button from "@mui/material/Button";
 
-// Here we are using object destructuring assignment to pluck off our variables from the props object
-// We assign them to their own variable names
-function Nav() {
+//
+//
+//
+//
+
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
+
+export default function Nav() {
+  const color = "black";
+
+  const [navigation, setNavigation] = React.useState("");
+
+  const handleNavigation = (event) => {
+    setNavigation(event.target.value);
+  };
+
   return (
-    <ul
-      className="nav nav-tabs"
-      style={{
-        marginTop: "0px",
-      }}
-    >
-      <Link to={"/"} className="nav-item" style={{ marginRight: "2rem" }}>
-        Home
-      </Link>
-      <Link to={"/blog"} className="nav-item" style={{ marginRight: "2rem" }}>
-        Blog
-      </Link>
-      <Link to={"/about"} className="nav-item" style={{ marginRight: "2rem" }}>
-        About
-      </Link>
-      <Link
-        to={"/contact"}
-        className="nav-item"
-        style={{ marginRight: "2rem" }}
+    <FormControl sx={{ m: 1, minWidth: 120 }} size="medium">
+      <InputLabel id="demo-select-medium-label" className="nav-font">
+        NAVIGATE
+      </InputLabel>
+      <Select
+        labelId="demo-select-medium-label"
+        className="nav-font"
+        id="demo-select-medium"
+        value={navigation}
+        label="Navigation"
+        onChange={handleNavigation}
       >
-        Contact
-      </Link>
-    </ul>
+        <MenuItem component={Link} to="/" sx={{ color }} value="About">
+          About
+        </MenuItem>
+        <MenuItem
+          component={Link}
+          to="/portfolio"
+          sx={{ color }}
+          value="Portfolio"
+        >
+          Portfolio
+        </MenuItem>
+        <MenuItem component={Link} to="/resume" sx={{ color }} value="Resume">
+          Resume
+        </MenuItem>
+        <MenuItem component={Link} to="/contact" sx={{ color }} value="Contact">
+          Contact
+        </MenuItem>
+      </Select>
+    </FormControl>
   );
 }
-
-export default Nav;
