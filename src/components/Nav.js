@@ -25,12 +25,16 @@ export default function Nav() {
   };
 
   return (
-    <FormControl sx={{ m: 1, minWidth: 120 }} size="medium">
-      <InputLabel id="demo-select-medium-label" className="nav-font">
+    <FormControl sx={{ m: 1, minWidth: 120, padding: 5 }} size="medium">
+      <InputLabel
+        sx={{ padding: 5, textAlign: "center" }}
+        id="select-medium-label"
+        className="nav-font"
+      >
         NAVIGATE
       </InputLabel>
       <Select
-        labelId="demo-select-medium-label"
+        labelId="select-medium-label"
         className="nav-font"
         id="demo-select-medium"
         value={navigation}

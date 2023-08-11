@@ -12,4 +12,19 @@
 .nav-font {
   font-family: "Space Grotesk", "Courier New", Courier, monospace;
   color: aliceblue !important;
+  text-align: center;
+}
+
+.page-title {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.page-content {
+  text-align: center;
+  /* margin: 10%; */
+  padding-left: 10%;
+  padding-right: 10%;
+
+  font-size: large;
 }
