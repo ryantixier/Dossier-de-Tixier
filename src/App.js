@@ -1,5 +1,6 @@
 import React from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
 import Nav from "./components/Nav";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -35,7 +36,7 @@ function App() {
             flicker={false}
           />
           <div className="container">
-            <Nav />
+            <Header />
             <Routes>
               <Route path="/" element={<About />} />
               <Route path="/portfolio" element={<Portfolio />} />
