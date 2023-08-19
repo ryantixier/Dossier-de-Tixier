@@ -9,6 +9,7 @@ import Sparkle from "react-sparkle";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
 import "./App.css";
+import Footer from "./components/Footer.js";
 
 function App() {
   return (
@@ -46,8 +47,11 @@ function App() {
           </div>
         </div>
       </Router>
+      <Footer />
     </div>
   );
 }
 
 export default App;
+
+// incorporate carousel into rendering?
