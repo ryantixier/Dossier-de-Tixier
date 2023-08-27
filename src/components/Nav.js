@@ -55,9 +55,6 @@ export default function Nav() {
         <MenuItem component={Link} to="/resume" sx={{ color }} value="Resume">
           Resume
         </MenuItem>
-        <MenuItem component={Link} to="/contact" sx={{ color }} value="Contact">
-          Contact
-        </MenuItem>
       </Select>
     </FormControl>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../assets/Resume.pdf";
+import resume from "../assets/RT-Resume.pdf";
 import { Button } from "@mui/material";
 
 export default function Resume() {

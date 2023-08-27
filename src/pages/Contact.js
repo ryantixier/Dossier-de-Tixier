@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import Modal from "@mui/material/Modal";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
@@ -26,44 +27,55 @@ export default function Contact() {
       );
   };
 
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     // nest whole div in modal
     <div>
-      <h1>Contact Page</h1>
-      <form ref={form} onSubmit={sendEmail}>
-        <div>
-          <TextField
-            name="name"
-            required
-            label="Full Name"
-            variant="standard"
-          />
-        </div>
-        <div>
-          <TextField
-            required
-            name="email"
-            type="email"
-            label="Email"
-            variant="standard"
-          />
-        </div>
-        <div>
-          <TextField
-            required
-            name="message"
-            label="Message"
-            variant="standard"
-            multiline
-            minRows={4}
-            maxRows={7}
-          />
-        </div>
-        <Button type="submit" variant="contained">
-          Submit
-        </Button>
-        {/* add snackbar confirmation */}
-      </form>
+      <Button onClick={handleOpen}>CONTACT</Button>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <form ref={form} onSubmit={sendEmail}>
+          <div>
+            <TextField
+              name="name"
+              required
+              label="Full Name"
+              variant="standard"
+            />
+          </div>
+          <div>
+            <TextField
+              required
+              name="email"
+              type="email"
+              label="Email"
+              variant="standard"
+            />
+          </div>
+          <div>
+            <TextField
+              required
+              name="message"
+              label="Message"
+              variant="standard"
+              multiline
+              minRows={4}
+              maxRows={7}
+            />
+          </div>
+          <Button type="submit" variant="contained">
+            Submit
+          </Button>
+          {/* add snackbar confirmation */}
+        </form>
+      </Modal>
     </div>
   );
 }

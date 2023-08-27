@@ -2,14 +2,14 @@ import React from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
-import backgroundImg from "./assets/images/AstroRy.jpeg";
-import Sparkle from "react-sparkle";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
+// import Contact from "./pages/Contact";
+import Sparkle from "react-sparkle";
+import backgroundImg from "./assets/images/AstroRy.jpeg";
 import "./App.css";
-import Footer from "./components/Footer.js";
 
 function App() {
   return (
@@ -33,7 +33,7 @@ function App() {
             minSize={7}
             maxSize={12}
             overflowPx={0}
-            fadeOutSpeed={1}
+            fadeOutSpeed={0.5}
             flicker={false}
           />
           <div className="container">
@@ -42,7 +42,7 @@ function App() {
               <Route path="/" element={<About />} />
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/resume" element={<Resume />} />
-              <Route path="/contact" element={<Contact />} />
+              {/* <Route path="/contact" element={<Contact />} /> */}
             </Routes>
           </div>
         </div>
