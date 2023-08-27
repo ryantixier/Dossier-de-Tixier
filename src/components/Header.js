@@ -4,10 +4,13 @@ import "../App.css";
 
 export default function Header() {
   return (
-    <>
+    <div className="container">
+      {/* <div className="header">RYAN TIXIER</div> */}
       <Nav />
-      <h1 className="header">RYAN TIXIER</h1>
-    </>
+    </div>
   );
 }
 // make props = page-title
+
+// ADD IMG/AVATAR
+// FLOAT NAV TO RIGHT-START OF IMG

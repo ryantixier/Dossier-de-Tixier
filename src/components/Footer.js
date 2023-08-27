@@ -15,7 +15,7 @@ import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
 import emailjs from "@emailjs/browser";
 
-const style = {
+const modalStyle = {
   position: "absolute",
   top: "50%",
   left: "50%",
@@ -71,6 +71,7 @@ export default function Footer() {
         }}
       >
         <BottomNavigation showLabels>
+          <div className="name">Ryan Tixier</div>
           <BottomNavigationAction
             component={Link}
             href={LinkedIn}
@@ -96,8 +97,8 @@ export default function Footer() {
               aria-labelledby="contact-me-modal"
               aria-describedby="contact-me-modal"
             >
-              <Box sx={style}>
-                <form ref={form} onSubmit={sendEmail}>
+              <Box sx={modalStyle}>
+                <form className="contact-form" ref={form} onSubmit={sendEmail}>
                   <h3>Contact</h3>
                   <div>
                     <TextField
@@ -105,6 +106,7 @@ export default function Footer() {
                       required
                       label="Full Name"
                       variant="standard"
+                      fullWidth
                     />
                   </div>
                   <div>
@@ -114,6 +116,7 @@ export default function Footer() {
                       type="email"
                       label="Email"
                       variant="standard"
+                      fullWidth
                     />
                   </div>
                   <div>
@@ -125,6 +128,7 @@ export default function Footer() {
                       multiline
                       minRows={4}
                       maxRows={7}
+                      fullWidth
                     />
                   </div>
                   <Button

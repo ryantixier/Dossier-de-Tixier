@@ -4,13 +4,24 @@ import { Button } from "@mui/material";
 
 export default function Resume() {
   return (
-    <div>
-      <h1>RESUME/SKILLS</h1>
-      <Button variant="outlined">
-        <a href={resume} download="resume">
-          Download My Resume!
-        </a>
-      </Button>
-    </div>
+    <>
+      <h2 className="page-title">RESUME</h2>
+      <div className="page-content">
+        <Button
+          color="primary"
+          variant="outlined"
+          href={resume}
+          download="RT-Resume"
+        >
+          Click to Download Resume
+        </Button>
+        <h2 className="page-title">SKILLS</h2>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JavaScript</p>
+        <p>React.js</p>
+        <p>Node.js</p>
+      </div>
+    </>
   );
 }

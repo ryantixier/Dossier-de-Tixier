@@ -25,37 +25,39 @@ export default function Nav() {
   };
 
   return (
-    <FormControl sx={{ m: 1, minWidth: 120, padding: 5 }} size="medium">
-      <InputLabel
-        sx={{ padding: 5, textAlign: "center" }}
-        id="select-medium-label"
-        className="nav-font"
-      >
-        NAVIGATE
-      </InputLabel>
-      <Select
-        labelId="select-medium-label"
-        className="nav-font"
-        id="demo-select-medium"
-        value={navigation}
-        label="Navigation"
-        onChange={handleNavigation}
-      >
-        <MenuItem component={Link} to="/" sx={{ color }} value="About">
-          About
-        </MenuItem>
-        <MenuItem
-          component={Link}
-          to="/portfolio"
-          sx={{ color }}
-          value="Portfolio"
+    <div>
+      <FormControl sx={{ m: 1, minWidth: 120, padding: 5 }} size="medium">
+        <InputLabel
+          sx={{ padding: 5, textAlign: "center" }}
+          id="select-medium-label"
+          className="nav-font"
         >
-          Portfolio
-        </MenuItem>
-        <MenuItem component={Link} to="/resume" sx={{ color }} value="Resume">
-          Resume
-        </MenuItem>
-      </Select>
-    </FormControl>
+          NAVIGATE
+        </InputLabel>
+        <Select
+          labelId="select-medium-label"
+          className="nav-font"
+          id="demo-select-medium"
+          value={navigation}
+          label="Navigation"
+          onChange={handleNavigation}
+        >
+          <MenuItem component={Link} to="/" sx={{ color }} value="About">
+            About
+          </MenuItem>
+          <MenuItem
+            component={Link}
+            to="/portfolio"
+            sx={{ color }}
+            value="Portfolio"
+          >
+            Portfolio
+          </MenuItem>
+          <MenuItem component={Link} to="/resume" sx={{ color }} value="Resume">
+            Resume
+          </MenuItem>
+        </Select>
+      </FormControl>
+    </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
-import Nav from "./components/Nav";
+// import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
@@ -33,7 +33,7 @@ function App() {
             minSize={7}
             maxSize={12}
             overflowPx={0}
-            fadeOutSpeed={0.5}
+            fadeOutSpeed={1}
             flicker={false}
           />
           <div className="container">
@@ -42,7 +42,6 @@ function App() {
               <Route path="/" element={<About />} />
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/resume" element={<Resume />} />
-              {/* <Route path="/contact" element={<Contact />} /> */}
             </Routes>
           </div>
         </div>

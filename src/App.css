@@ -27,8 +27,17 @@
   bottom: 0px;
 }
 
-.header {
+/* .header {
+  float: inline-start;
+  width: 500px;
+  color: aliceblue;
+} */
+
+.name {
+  margin: auto;
+  font-size: 25px;
   text-align: center;
+  width: 200px;
 }
 
 .page-title {
