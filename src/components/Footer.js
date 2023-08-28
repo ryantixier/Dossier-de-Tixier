@@ -93,7 +93,7 @@ export default function Footer() {
             <Modal
               className="modal"
               open={open}
-              onClose={handleClose}
+              onSubmit={handleClose}
               aria-labelledby="contact-me-modal"
               aria-describedby="contact-me-modal"
             >
