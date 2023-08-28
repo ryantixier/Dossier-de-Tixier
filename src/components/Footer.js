@@ -13,14 +13,21 @@ import { useRef } from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
+import Snackbar from "@mui/material/Snackbar";
 import emailjs from "@emailjs/browser";
+
+import MuiAlert from "@mui/material/Alert";
+
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
 const modalStyle = {
   position: "absolute",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 400,
+  width: 320,
   bgcolor: "background.paper",
   border: "2px solid #000",
   borderRadius: "10px",
@@ -58,6 +65,19 @@ export default function Footer() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  // snackbar functionality
+  const [openSnack, setOpenSnack] = React.useState(false);
+  const handleClickSnack = () => {
+    setOpenSnack(true);
+  };
+
+  const handleCloseSnack = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpenSnack(false);
+  };
+
   return (
     <>
       <Box
@@ -94,6 +114,7 @@ export default function Footer() {
               className="modal"
               open={open}
               onSubmit={handleClose}
+              onClose={handleClose}
               aria-labelledby="contact-me-modal"
               aria-describedby="contact-me-modal"
             >
@@ -135,6 +156,8 @@ export default function Footer() {
                     type="submit"
                     variant="outlined"
                     sx={{ marginTop: "10px" }}
+                    // onclick to trigger snackbar conf
+                    onClick={handleClickSnack}
                   >
                     Submit
                   </Button>
@@ -142,10 +165,18 @@ export default function Footer() {
                 </form>
               </Box>
             </Modal>
+            <Snackbar
+              open={openSnack}
+              autoHideDuration={6000}
+              onClose={handleCloseSnack}
+            >
+              <Alert variant="outlined" severity="success" color="info">
+                Form Submitted
+              </Alert>
+            </Snackbar>
           </div>
         </BottomNavigation>
       </Box>
-      <Box sx={{ width: "600px", color: "black" }}></Box>
     </>
   );
 }
