@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Link } from "@mui/material";
-import { Paper } from "@mui/material";
 import { Box } from "@mui/material";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
@@ -88,6 +87,7 @@ export default function Footer() {
           bottom: 0,
           left: 0,
           right: 0,
+          // marginBottom: ,
         }}
       >
         <BottomNavigation showLabels>
@@ -180,9 +180,3 @@ export default function Footer() {
     </>
   );
 }
-
-// need linkedin link
-// need gmail link
-// need GH link
-// incorporate avatar
-// add icons from material ui

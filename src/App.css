@@ -19,13 +19,13 @@
   text-align: center;
 }
 
-.my-links {
+/* .my-links {
   color: black;
   position: fixed;
-  /* justify-content: center; */
+  justify-content: center;
   width: 600px;
   bottom: 0px;
-}
+} */
 
 /* .header {
   float: inline-start;
@@ -50,7 +50,7 @@
   color: aliceblue;
   text-align: center;
   /* margin: 10%; */
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
   font-size: large;
 }
