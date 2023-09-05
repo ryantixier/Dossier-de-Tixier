@@ -1,17 +1,30 @@
 import React from "react";
 import { Carousel } from "antd";
-import { styled } from "@mui/material/styles";
-import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
-import CardContent from "@mui/material/CardContent";
-import CardActions from "@mui/material/CardActions";
-import Collapse from "@mui/material/Collapse";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import "../assets/images/lilguy_with_eyes_workout_wizard_on_trans.png";
 import "../App.css";
+import { PortfolioCard } from "../components/PortfolioCard";
+
+// PROPS...
+
+// workout wizard
+const workoutWizard = {
+  image: require("../assets/images/lilguy_with_eyes_workout_wizard_on_trans.png"),
+  alt: "Workout Wizard",
+  title: "Workout Wizard",
+  description:
+    "Workout Wizard will quickly become your favorite, new (free) fitness compainion; create an account to design and track workouts according to your needs and goals!",
+  deployLink: "https://the-workout-wizard-7d5c29c6d6dd.herokuapp.com/",
+  githubLink: "https://github.com/ryantixier/Workout-Wizard",
+};
+
+// m3c
+
+// m4c
+
+// m9c
+
+// m11c
 
 const contentStyle = {
   color: "white",
@@ -19,17 +32,6 @@ const contentStyle = {
   textAlign: "center",
   background: "none",
 };
-
-const ExpandMore = styled((props) => {
-  const { expand, ...other } = props;
-  return <IconButton {...other} />;
-})(({ theme, expand }) => ({
-  transform: !expand ? "rotate(0deg)" : "rotate(180deg)",
-  marginLeft: "0",
-  transition: theme.transitions.create("transform", {
-    duration: theme.transitions.duration.shortest,
-  }),
-}));
 
 export default function Portfolio() {
   const [dotPosition, setDotPosition] = React.useState("top");
@@ -43,54 +45,17 @@ export default function Portfolio() {
   return (
     <div>
       <h2 className="page-title">MY PORTFOLIO</h2>
-      <Carousel dotPosition={dotPosition}>
+      <Carousel dotPosition={dotPosition} autoplay autoplaySpeed={5000}>
         <div>
           <h3 style={contentStyle}>Project(s)</h3>
-          <Card className="card-style">
-            <CardMedia
-              component="img"
-              height="300"
-              image={require("../assets/images/lilguy_with_eyes_workout_wizard_on_trans.png")}
-              alt="Workout Wizard"
-            />
-            <CardContent sx={{ textAlign: "center" }}>
-              <Typography variant="header" color="text.secondary" sx={{}}>
-                Workout Wizard
-              </Typography>
-              <CardActions sx={{ justifyContent: "center" }}>
-                <ExpandMore
-                  expand={expanded}
-                  onClick={handleExpandClick}
-                  aria-expanded={expanded}
-                  aria-label="show more"
-                >
-                  <ExpandMoreIcon />
-                </ExpandMore>
-              </CardActions>
-              <Collapse in={expanded} timeout="auto" unmountOnExit>
-                <CardContent>
-                  <Typography paragraph>
-                    Workout Wizard is your soon-to-be favorite, new fitness
-                    compainion; design and track workouts according to your
-                    needs and goals!
-                  </Typography>
-                  <Typography paragraph>
-                    <a href="https://the-workout-wizard-7d5c29c6d6dd.herokuapp.com/">
-                      View Site
-                    </a>
-                  </Typography>
-                  <Typography paragraph>
-                    <a href="https://github.com/ryantixier/Workout-Wizard">
-                      GitHub:{" Workout Wizard"}
-                    </a>
-                  </Typography>
-                  <Typography>DEMO CREDENTIALS...</Typography>
-                  <Typography>Username: demoAccount</Typography>
-                  <Typography>Password: Password1!</Typography>
-                </CardContent>
-              </Collapse>
-            </CardContent>
-          </Card>
+          <PortfolioCard
+            image={workoutWizard.image}
+            alt={workoutWizard.alt}
+            title={workoutWizard.title}
+            description={workoutWizard.description}
+            deployLink={workoutWizard.deployLink}
+            githubLink={workoutWizard.githubLink}
+          />
         </div>
         <div>
           <h3 style={contentStyle}>Bootcamp Assignments: Front-end</h3>

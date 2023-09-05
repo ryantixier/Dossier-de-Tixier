@@ -101,7 +101,7 @@ export default function Footer() {
           <BottomNavigationAction
             component={Link}
             href={GitHub}
-            label="Github"
+            label="GitHub"
             icon={<GitHubIcon />}
           />
           <BottomNavigationAction
