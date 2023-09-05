@@ -1,14 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import Divider from "@mui/material/Divider";
-import Button from "@mui/material/Button";
-
-//
-//
-//
-//
 
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -25,19 +16,16 @@ export default function Nav() {
   };
 
   return (
-    <div>
-      <FormControl sx={{ m: 1, minWidth: 120, padding: 5 }} size="medium">
+    <div className="nav">
+      <FormControl sx={{ m: 1, minWidth: 120, padding: 5 }}>
         <InputLabel
           sx={{ padding: 5, textAlign: "center" }}
-          id="select-medium-label"
           className="nav-font"
         >
           NAVIGATE
         </InputLabel>
         <Select
-          labelId="select-medium-label"
           className="nav-font"
-          id="demo-select-medium"
           value={navigation}
           label="Navigation"
           onChange={handleNavigation}

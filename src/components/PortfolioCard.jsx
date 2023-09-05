@@ -39,10 +39,9 @@ export const PortfolioCard = (props) => {
           alt={props.alt}
         />
         <CardContent sx={{ textAlign: "center" }}>
-          <Typography variant="header" color="text.secondary">
-            {props.title}
-          </Typography>
-          <CardActions sx={{ justifyContent: "center" }}>
+          <CardActions
+            sx={{ justifyContent: "center", bgcolor: "primary.main" }}
+          >
             <ExpandMore
               expand={expanded}
               onClick={handleExpandClick}
@@ -58,11 +57,15 @@ export const PortfolioCard = (props) => {
               <Typography paragraph>{props.description}</Typography>
               <Typography paragraph>
                 {/* PROPS: DEPLOY LINK */}
-                <a href={props.deployLink}>Visit Site</a>
+                <a className="site-links" href={props.deployLink}>
+                  Visit Site
+                </a>
               </Typography>
               <Typography paragraph>
                 {/* PROPS: GH LINK */}
-                <a href={props.githubLink}>GitHub Repository</a>
+                <a className="site-links" href={props.githubLink}>
+                  GitHub Repository
+                </a>
               </Typography>
             </CardContent>
           </Collapse>

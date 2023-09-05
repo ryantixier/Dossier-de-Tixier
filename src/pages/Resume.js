@@ -6,26 +6,28 @@ export default function Resume() {
   return (
     <>
       <h2 className="page-title">RESUME</h2>
-      <div className="page-content">
+      <div className="page-content" style={{ textAlign: "center" }}>
         <Button
           color="primary"
-          variant="outlined"
+          variant="contained"
           href={resume}
           download="RT-Resume"
         >
-          Click to Download Resume
+          Download Resume
         </Button>
-        <h2 className="page-title">SKILLS</h2>
+      </div>
+      <h2 className="page-title">SKILLS</h2>
+      <div className="page-content">
         <p>HTML</p>
         <p>CSS</p>
         <p>JavaScript</p>
         <p>React.js</p>
         <p>Node.js</p>
         {/* map() ^THIS^ OUT */}
-        <br />
-        <br />
-        <br />
       </div>
+      <br />
+      <br />
+      <br />
     </>
   );
 }

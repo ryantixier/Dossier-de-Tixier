@@ -45,7 +45,10 @@ export default function Portfolio() {
   return (
     <div>
       <h2 className="page-title">MY PORTFOLIO</h2>
-      <Carousel dotPosition={dotPosition} autoplay autoplaySpeed={5000}>
+      <Carousel
+        dotPosition={dotPosition}
+        // autoplay autoplaySpeed={5000}
+      >
         <div>
           <h3 style={contentStyle}>Project(s)</h3>
           <PortfolioCard

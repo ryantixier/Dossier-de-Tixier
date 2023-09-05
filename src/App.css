@@ -14,13 +14,14 @@ body {
 }
 
 .nav {
-  flex-direction: column;
+  text-align: center;
+  background: rgba(5, 90, 140, 0.18) !important;
+  box-shadow: 0px 0px 20px 0px !important;
 }
 
 .nav-font {
   font-family: "Space Grotesk", "Courier New", Courier, monospace;
   color: aliceblue !important;
-  text-align: center;
 }
 
 /* .my-links {
@@ -47,23 +48,38 @@ body {
 .page-title {
   color: aliceblue;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 5%;
+  text-shadow: 3px 3px 3px black;
 }
 
 .page-content {
-  color: aliceblue;
   text-align: center;
-  /* margin: 10%; */
-  padding-left: 15%;
-  padding-right: 15%;
+  color: aliceblue;
+  text-shadow: 3px 3px 3px black;
+  padding: 25px;
+  margin-right: 20%;
+  margin-left: 20%;
   font-size: large;
+  background: rgba(5, 90, 140, 0.75);
+  box-shadow: 0px 0px 20px 0px;
+  border-radius: 25px;
 }
 
 .card-style {
   justify-content: center;
+  color: aliceblue !important;
+  font: aliceblue !important;
+  text-shadow: 3px 3px 3px black;
   max-width: 320px;
   margin: auto;
   margin-top: 25px;
   margin-bottom: 100px;
   padding-top: 25px;
+  background: rgba(5, 90, 140, 0.75) !important;
+  box-shadow: 0px 0px 20px 0px !important;
+  border-radius: 25px !important;
+}
+
+.site-links {
+  color: blanchedalmond;
 }

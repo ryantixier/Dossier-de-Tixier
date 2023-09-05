@@ -33,7 +33,7 @@ function App() {
             minSize={7}
             maxSize={12}
             overflowPx={0}
-            fadeOutSpeed={1}
+            fadeOutSpeed={0.5}
             flicker={false}
           />
           <div className="container">
