@@ -170,7 +170,7 @@ export default function Footer() {
               autoHideDuration={6000}
               onClose={handleCloseSnack}
             >
-              <Alert variant="outlined" severity="success" color="info">
+              <Alert severity="success" color="info">
                 Form Submitted
               </Alert>
             </Snackbar>

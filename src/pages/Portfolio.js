@@ -9,10 +9,11 @@ import Collapse from "@mui/material/Collapse";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
 import "../assets/images/lilguy_with_eyes_workout_wizard_on_trans.png";
+import "../App.css";
 
 const contentStyle = {
-  height: "200px",
   color: "white",
   lineHeight: "100px",
   textAlign: "center",
@@ -44,10 +45,11 @@ export default function Portfolio() {
       <h2 className="page-title">MY PORTFOLIO</h2>
       <Carousel dotPosition={dotPosition}>
         <div>
-          <Card sx={{ maxWidth: 350, textAlign: "center" }}>
+          <h3 style={contentStyle}>Project(s)</h3>
+          <Card className="card-style">
             <CardMedia
               component="img"
-              height="400"
+              height="300"
               image={require("../assets/images/lilguy_with_eyes_workout_wizard_on_trans.png")}
               alt="Workout Wizard"
             />
@@ -74,7 +76,7 @@ export default function Portfolio() {
                   </Typography>
                   <Typography paragraph>
                     <a href="https://the-workout-wizard-7d5c29c6d6dd.herokuapp.com/">
-                      Click to View Site
+                      View Site
                     </a>
                   </Typography>
                   <Typography paragraph>
@@ -91,10 +93,10 @@ export default function Portfolio() {
           </Card>
         </div>
         <div>
-          <h3 style={contentStyle}>Code Gauntlet</h3>
+          <h3 style={contentStyle}>Bootcamp Assignments: Front-end</h3>
         </div>
         <div>
-          <h3 style={contentStyle}>Dr. Drink</h3>
+          <h3 style={contentStyle}>Bootcamp Assignments: Back-end</h3>
         </div>
       </Carousel>
     </div>

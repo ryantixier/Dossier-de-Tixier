@@ -21,6 +21,10 @@ export default function Resume() {
         <p>JavaScript</p>
         <p>React.js</p>
         <p>Node.js</p>
+        {/* map() ^THIS^ OUT */}
+        <br />
+        <br />
+        <br />
       </div>
     </>
   );

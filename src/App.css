@@ -58,3 +58,12 @@ body {
   padding-right: 15%;
   font-size: large;
 }
+
+.card-style {
+  justify-content: center;
+  max-width: 320px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 100px;
+  padding-top: 25px;
+}
