@@ -5,6 +5,10 @@
   /* color: aliceblue; */
 }
 
+body {
+  padding-bottom: 42px;
+}
+
 .modal {
   text-align: center;
 }
