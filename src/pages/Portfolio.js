@@ -72,18 +72,17 @@ const contentStyle = {
 };
 
 export default function Portfolio() {
-  const [dotPosition, setDotPosition] = React.useState("top");
-
-  const [expanded, setExpanded] = React.useState(false);
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
+  const [dotPosition] = React.useState("top");
 
   return (
     <div>
       <h2 className="page-title">MY PORTFOLIO</h2>
-      <Carousel dotPosition={dotPosition} autoplay autoplaySpeed={5000}>
+      <Carousel
+        dotPosition={dotPosition}
+        effect="fade"
+        autoplay
+        autoplaySpeed={5000}
+      >
         <div>
           <h3 style={contentStyle}>Project(s)</h3>
           <PortfolioCard
