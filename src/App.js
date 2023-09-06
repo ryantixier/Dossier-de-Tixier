@@ -10,6 +10,7 @@ import Resume from "./pages/Resume";
 import Sparkle from "react-sparkle";
 import backgroundImg from "./assets/images/AstroRy.jpeg";
 import "./App.css";
+import Nav from "./components/Nav";
 
 function App() {
   return (
@@ -17,7 +18,6 @@ function App() {
       style={{
         backgroundImage: `url(${backgroundImg})`,
         minHeight: "100vh",
-        // minWidth: "1159px",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         position: "relative",
@@ -37,7 +37,7 @@ function App() {
             flicker={false}
           />
           <div className="container">
-            <Header />
+            <Nav />
             <Routes>
               <Route path="/" element={<About />} />
               <Route path="/portfolio" element={<Portfolio />} />

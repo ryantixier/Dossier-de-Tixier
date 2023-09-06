@@ -1,43 +1,31 @@
+/* import font from google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Nabla&family=Space+Grotesk:wght@300;600&display=swap");
 
+/* applies google font to whole app */
 * {
   font-family: "Space Grotesk", "Courier New", Courier, monospace;
   /* color: aliceblue; */
 }
 
-body {
-  padding-bottom: 42px;
-}
-
+/* centers text in contact-me modal */
 .modal {
   text-align: center;
 }
 
+/* nav menu */
 .nav {
   text-align: center;
   background: rgba(5, 90, 140, 0.18) !important;
   box-shadow: 0px 0px 20px 0px !important;
 }
 
+/* selected nav menu item overrides default font from mui */
 .nav-font {
   font-family: "Space Grotesk", "Courier New", Courier, monospace;
   color: aliceblue !important;
 }
 
-/* .my-links {
-  color: black;
-  position: fixed;
-  justify-content: center;
-  width: 600px;
-  bottom: 0px;
-} */
-
-/* .header {
-  float: inline-start;
-  width: 500px;
-  color: aliceblue;
-} */
-
+/* name styling found in footer */
 .name {
   margin: auto;
   font-size: 25px;
@@ -45,6 +33,7 @@ body {
   width: 200px;
 }
 
+/* refers to specific page title: "About" / "My Portfolio" / "Resume" & "Skills"  */
 .page-title {
   color: aliceblue;
   text-align: center;
@@ -52,6 +41,7 @@ body {
   text-shadow: 3px 3px 3px black;
 }
 
+/* content body of page (<p> elements) */
 .page-content {
   text-align: center;
   color: aliceblue;
@@ -65,6 +55,7 @@ body {
   border-radius: 25px;
 }
 
+/* make dots larger than antd default for carousel */
 .ant-carousel .slick-dots li button {
   background: rgb(196, 175, 237);
   opacity: 0.4;
@@ -72,6 +63,7 @@ body {
   width: 20px;
 }
 
+/* make dots larger than antd default for carousel */
 .ant-carousel .slick-dots li.slick-active button {
   opacity: 1;
   background: rgb(196, 175, 237);
@@ -80,6 +72,7 @@ body {
   border-radius: 10px;
 }
 
+/* formatting for mui cards; had to override certain defaults */
 .card-style {
   justify-content: center;
   color: aliceblue !important;
@@ -94,6 +87,7 @@ body {
   border-radius: 25px !important;
 }
 
+/* positioning of item cards in My Portfolio */
 .card-layout {
   display: flex;
   flex-wrap: wrap;
@@ -101,6 +95,12 @@ body {
   margin-right: 10%;
 }
 
+/* overrides default link color */
 .site-links {
   color: rgb(196, 175, 237);
+}
+
+/* overrides default link color on hover */
+.site-links:hover {
+  color: rgb(216, 145, 222);
 }

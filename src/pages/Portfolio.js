@@ -58,10 +58,9 @@ const m11c = {
   alt: "Note Taker",
   title: "Note Taker",
   description:
-    "This application is a simple note-taking aide; write down your ideas, tasks, and to-do's in the same place and access them anywhere from the convenience of your device.",
+    "This application is a simple note-taking aide; write down your ideas, tasks, and to-do's in the same place and access them anywhere from the convenience of your device. NOTE: Functionality to delete a note is in progress.",
+  deployLink: "https://immense-hamlet-04654-20b51f7cdbb9.herokuapp.com/",
   githubLink: "https://github.com/ryantixier/M11C_note-taker",
-  disclaimer:
-    "Click the link to the GitHub repository for more information on how to use the note-taker.",
 };
 
 const contentStyle = {
@@ -126,13 +125,13 @@ export default function Portfolio() {
               githubLink={m9c.githubLink}
               disclaimer={m9c.disclaimer}
             />
-            <PortfolioBack
+            <PortfolioCard
               image={m11c.image}
               alt={m11c.alt}
               title={m11c.title}
               description={m11c.description}
+              deployLink={m11c.deployLink}
               githubLink={m11c.githubLink}
-              disclaimer={m11c.disclaimer}
             />
           </div>
         </div>
