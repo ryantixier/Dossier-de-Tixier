@@ -87,7 +87,6 @@ export default function Footer() {
           bottom: 0,
           left: 0,
           right: 0,
-          // marginBottom: ,
         }}
       >
         <BottomNavigation showLabels>
@@ -95,12 +94,14 @@ export default function Footer() {
           <BottomNavigationAction
             component={Link}
             href={LinkedIn}
+            target="_blank"
             label="LinkedIn"
             icon={<LinkedInIcon />}
           />
           <BottomNavigationAction
             component={Link}
             href={GitHub}
+            target="_blank"
             label="GitHub"
             icon={<GitHubIcon />}
           />

@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/Dossier-de-Tixier/static/css/main.8209a19d.css",
-    "main.js": "/Dossier-de-Tixier/static/js/main.7129e703.js",
+    "main.css": "/Dossier-de-Tixier/static/css/main.3db38c25.css",
+    "main.js": "/Dossier-de-Tixier/static/js/main.f324f344.js",
     "static/js/787.c4e7f8f9.chunk.js": "/Dossier-de-Tixier/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/lilguy_with_eyes_workout_wizard_on_trans.png": "/Dossier-de-Tixier/static/media/lilguy_with_eyes_workout_wizard_on_trans.2e321f61f72028e0470c.png",
     "static/media/RT-Resume.pdf": "/Dossier-de-Tixier/static/media/RT-Resume.eacb139223f5da4b25ee.pdf",
     "static/media/AstroRy.jpeg": "/Dossier-de-Tixier/static/media/AstroRy.ef02bf4e6e45efe4fbb0.jpeg",
     "index.html": "/Dossier-de-Tixier/index.html",
-    "main.8209a19d.css.map": "/Dossier-de-Tixier/static/css/main.8209a19d.css.map",
-    "main.7129e703.js.map": "/Dossier-de-Tixier/static/js/main.7129e703.js.map",
+    "main.3db38c25.css.map": "/Dossier-de-Tixier/static/css/main.3db38c25.css.map",
+    "main.f324f344.js.map": "/Dossier-de-Tixier/static/js/main.f324f344.js.map",
     "787.c4e7f8f9.chunk.js.map": "/Dossier-de-Tixier/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8209a19d.css",
-    "static/js/main.7129e703.js"
+    "static/css/main.3db38c25.css",
+    "static/js/main.f324f344.js"
   ]
 }

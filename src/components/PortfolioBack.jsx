@@ -10,7 +10,7 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-export const PortfolioCard = (props) => {
+export const PortfolioBack = (props) => {
   const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
     return <IconButton {...other} />;
@@ -55,16 +55,7 @@ export const PortfolioCard = (props) => {
               {/* PROPS: DESCRIPTION */}
               <Typography paragraph>{props.description}</Typography>
               <br />
-              <Typography paragraph>
-                {/* PROPS: DEPLOY LINK */}
-                <a
-                  className="site-links"
-                  href={props.deployLink}
-                  target="_blank"
-                >
-                  Visit Site
-                </a>
-              </Typography>
+
               <Typography paragraph>
                 {/* PROPS: GH LINK */}
                 <a
@@ -74,6 +65,10 @@ export const PortfolioCard = (props) => {
                 >
                   GitHub Repository
                 </a>
+              </Typography>
+              <Typography paragraph>
+                {/* PROPS: DEPLOY LINK */}
+                <p>{props.disclaimer}</p>
               </Typography>
             </CardContent>
           </Collapse>
