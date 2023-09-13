@@ -53,6 +53,7 @@ export default function Footer() {
       .then(
         (result) => {
           console.log(result.text);
+          handleClickSnack();
         },
         (error) => {
           console.log(error.text);
@@ -157,8 +158,6 @@ export default function Footer() {
                     type="submit"
                     variant="outlined"
                     sx={{ marginTop: "10px" }}
-                    // onclick to trigger snackbar conf
-                    onClick={handleClickSnack}
                   >
                     Submit
                   </Button>
