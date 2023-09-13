@@ -6,6 +6,10 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
+import { motion } from "framer-motion";
+
+import RocketRy from "../assets/images/rocketRy.png";
+
 export default function Nav() {
   const color = "black";
 
@@ -16,8 +20,13 @@ export default function Nav() {
   };
 
   return (
-    <div className="nav">
-      <FormControl sx={{ m: 1, minWidth: 120, padding: 5 }}>
+    <motion.div
+      className="nav"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: "easeOut", duration: 1 }}
+    >
+      <FormControl sx={{ m: 1, minWidth: 150, padding: 5 }}>
         <InputLabel
           sx={{ padding: 5, textAlign: "center" }}
           className="nav-font"
@@ -30,22 +39,32 @@ export default function Nav() {
           label="Navigation"
           onChange={handleNavigation}
         >
-          <MenuItem component={Link} to="/" sx={{ color }} value="About">
+          <MenuItem
+            component={Link}
+            to="/"
+            sx={{ color, justifyContent: "center" }}
+            value="About"
+          >
             About
           </MenuItem>
           <MenuItem
             component={Link}
             to="/portfolio"
-            sx={{ color }}
+            sx={{ color, justifyContent: "center" }}
             value="Portfolio"
           >
             Portfolio
           </MenuItem>
-          <MenuItem component={Link} to="/resume" sx={{ color }} value="Resume">
+          <MenuItem
+            component={Link}
+            to="/resume"
+            sx={{ color, justifyContent: "center" }}
+            value="Resume"
+          >
             Resume
           </MenuItem>
         </Select>
       </FormControl>
-    </div>
+    </motion.div>
   );
 }
