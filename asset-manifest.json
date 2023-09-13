@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ef7c49f6.css",
-    "main.js": "/static/js/main.e4fc1840.js",
+    "main.js": "/static/js/main.ca73ab7a.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/lilguy_with_eyes_workout_wizard_on_trans.png": "/static/media/lilguy_with_eyes_workout_wizard_on_trans.2e321f61f72028e0470c.png",
     "static/media/M11C-note-taker.png": "/static/media/M11C-note-taker.e87c45a1e42d2607de2b.png",
@@ -12,11 +12,11 @@
     "static/media/M4C-code-quiz.png": "/static/media/M4C-code-quiz.540f6437daf966b1e091.png",
     "index.html": "/index.html",
     "main.ef7c49f6.css.map": "/static/css/main.ef7c49f6.css.map",
-    "main.e4fc1840.js.map": "/static/js/main.e4fc1840.js.map",
+    "main.ca73ab7a.js.map": "/static/js/main.ca73ab7a.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef7c49f6.css",
-    "static/js/main.e4fc1840.js"
+    "static/js/main.ca73ab7a.js"
   ]
 }
