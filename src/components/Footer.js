@@ -35,7 +35,7 @@ const modalStyle = {
 };
 
 export default function Footer() {
-  const LinkedIn = "https://www.linkedin.com/in/ryan-tixier-b8988470/";
+  const LinkedIn = "https://www.linkedin.com/in/ryan-tixier/";
   const GitHub = "https://github.com/ryantixier";
 
   const form = useRef();
