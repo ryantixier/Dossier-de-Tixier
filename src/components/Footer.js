@@ -1,4 +1,6 @@
 import * as React from "react";
+import { useRef } from "react";
+
 import { Link } from "@mui/material";
 import { Box } from "@mui/material";
 import BottomNavigation from "@mui/material/BottomNavigation";
@@ -7,15 +9,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 import "../App.css";
-
-import { useRef } from "react";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
 import Snackbar from "@mui/material/Snackbar";
-import emailjs from "@emailjs/browser";
-
 import MuiAlert from "@mui/material/Alert";
+
+import ContactForm from "./ContactForm";
+
+import emailjs from "@emailjs/browser";
 
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -122,46 +122,7 @@ export default function Footer() {
             >
               <Box sx={modalStyle}>
                 <form className="contact-form" ref={form} onSubmit={sendEmail}>
-                  <h3>Contact</h3>
-                  <div>
-                    <TextField
-                      name="name"
-                      required
-                      label="Full Name"
-                      variant="standard"
-                      fullWidth
-                    />
-                  </div>
-                  <div>
-                    <TextField
-                      required
-                      name="email"
-                      type="email"
-                      label="Email"
-                      variant="standard"
-                      fullWidth
-                    />
-                  </div>
-                  <div>
-                    <TextField
-                      required
-                      name="message"
-                      label="Message"
-                      variant="standard"
-                      multiline
-                      minRows={4}
-                      maxRows={7}
-                      fullWidth
-                    />
-                  </div>
-                  <Button
-                    type="submit"
-                    variant="outlined"
-                    sx={{ marginTop: "10px" }}
-                  >
-                    Submit
-                  </Button>
-                  {/* add snackbar confirmation */}
+                  <ContactForm />
                 </form>
               </Box>
             </Modal>

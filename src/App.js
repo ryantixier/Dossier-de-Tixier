@@ -1,16 +1,15 @@
 import React from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
-// import Nav from "./components/Nav";
+
+import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
-// import Contact from "./pages/Contact";
+
 import Sparkle from "react-sparkle";
 import backgroundImg from "./assets/images/AstroRy.jpeg";
 import "./App.css";
-import Nav from "./components/Nav";
 
 function App() {
   return (
@@ -23,8 +22,6 @@ function App() {
         position: "relative",
       }}
     >
-      {/* <div style={{ position: "relative", width: "100%", height: "100%" }}> */}
-      {/* </div> */}
       <Router>
         <div className="flex-column justify-flex-start min-100-vh">
           <Sparkle
