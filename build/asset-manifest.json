@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Dossier-de-Tixier/static/css/main.ef7c49f6.css",
-    "main.js": "/Dossier-de-Tixier/static/js/main.c3089522.js",
-    "static/js/787.c4e7f8f9.chunk.js": "/Dossier-de-Tixier/static/js/787.c4e7f8f9.chunk.js",
-    "static/media/lilguy_with_eyes_workout_wizard_on_trans.png": "/Dossier-de-Tixier/static/media/lilguy_with_eyes_workout_wizard_on_trans.2e321f61f72028e0470c.png",
-    "static/media/M11C-note-taker.png": "/Dossier-de-Tixier/static/media/M11C-note-taker.e87c45a1e42d2607de2b.png",
-    "static/media/M3C-password-generator-mock-up.png": "/Dossier-de-Tixier/static/media/M3C-password-generator-mock-up.1ecdfa493590a1f9375e.png",
-    "static/media/M9C-README-generator.png": "/Dossier-de-Tixier/static/media/M9C-README-generator.9cf32b2b0f5aa302555e.png",
-    "static/media/RT-Resume.pdf": "/Dossier-de-Tixier/static/media/RT-Resume.eacb139223f5da4b25ee.pdf",
-    "static/media/AstroRy.jpeg": "/Dossier-de-Tixier/static/media/AstroRy.ef02bf4e6e45efe4fbb0.jpeg",
-    "static/media/M4C-code-quiz.png": "/Dossier-de-Tixier/static/media/M4C-code-quiz.540f6437daf966b1e091.png",
-    "index.html": "/Dossier-de-Tixier/index.html",
-    "main.ef7c49f6.css.map": "/Dossier-de-Tixier/static/css/main.ef7c49f6.css.map",
-    "main.c3089522.js.map": "/Dossier-de-Tixier/static/js/main.c3089522.js.map",
-    "787.c4e7f8f9.chunk.js.map": "/Dossier-de-Tixier/static/js/787.c4e7f8f9.chunk.js.map"
+    "main.css": "/static/css/main.ef7c49f6.css",
+    "main.js": "/static/js/main.e4fc1840.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/lilguy_with_eyes_workout_wizard_on_trans.png": "/static/media/lilguy_with_eyes_workout_wizard_on_trans.2e321f61f72028e0470c.png",
+    "static/media/M11C-note-taker.png": "/static/media/M11C-note-taker.e87c45a1e42d2607de2b.png",
+    "static/media/M3C-password-generator-mock-up.png": "/static/media/M3C-password-generator-mock-up.1ecdfa493590a1f9375e.png",
+    "static/media/M9C-README-generator.png": "/static/media/M9C-README-generator.9cf32b2b0f5aa302555e.png",
+    "static/media/RT-Resume.pdf": "/static/media/RT-Resume.87b80b43384ee94a411e.pdf",
+    "static/media/AstroRy.jpeg": "/static/media/AstroRy.ef02bf4e6e45efe4fbb0.jpeg",
+    "static/media/M4C-code-quiz.png": "/static/media/M4C-code-quiz.540f6437daf966b1e091.png",
+    "index.html": "/index.html",
+    "main.ef7c49f6.css.map": "/static/css/main.ef7c49f6.css.map",
+    "main.e4fc1840.js.map": "/static/js/main.e4fc1840.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef7c49f6.css",
-    "static/js/main.c3089522.js"
+    "static/js/main.e4fc1840.js"
   ]
 }
