@@ -74,7 +74,6 @@
 
 /* formatting for mui cards; had to override certain defaults */
 .card-style {
-  justify-content: center;
   color: aliceblue !important;
   text-shadow: 3px 3px 3px black;
   max-width: 320px;
