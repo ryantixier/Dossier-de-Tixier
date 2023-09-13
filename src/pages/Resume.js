@@ -23,6 +23,8 @@ export default function Resume() {
         <p>JavaScript</p>
         <p>React.js</p>
         <p>Node.js</p>
+        <p>Git</p>
+        <p>Agile Software Development</p>
         {/* map() ^THIS^ OUT */}
       </div>
       <br />
