@@ -27,7 +27,9 @@ export default function Nav() {
       transition={{ ease: "easeOut", duration: 1 }}
     >
       <FormControl sx={{ m: 1, minWidth: 150, padding: 5 }}>
-        <InputLabel className="nav-font">NAVIGATE</InputLabel>
+        <InputLabel className="nav-font" sx={{ padding: 5, marginLeft: 1 }}>
+          NAVIGATE
+        </InputLabel>
         <Select
           className="nav-font"
           value={navigation}

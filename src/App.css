@@ -23,7 +23,7 @@
 .nav-font {
   font-family: "Space Grotesk", "Courier New", Courier, monospace;
   color: aliceblue !important;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 /* name styling found in footer */
