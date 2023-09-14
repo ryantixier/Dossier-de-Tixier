@@ -10,6 +10,8 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
+import { motion } from "framer-motion";
+
 export const PortfolioBack = (props) => {
   const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -31,48 +33,57 @@ export const PortfolioBack = (props) => {
   return (
     <>
       <Card className="card-style">
-        <CardMedia
-          component="img"
-          height="300"
-          image={props.image}
-          alt={props.alt}
-        />
-        <CardContent sx={{ textAlign: "center" }}>
-          <CardActions
-            sx={{ justifyContent: "center", bgcolor: "primary.main" }}
-          >
-            <ExpandMore
-              expand={expanded}
-              onClick={handleExpandClick}
-              aria-expanded={expanded}
-              aria-label="show more"
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 1,
+            delay: 0.2,
+          }}
+        >
+          <CardMedia
+            component="img"
+            height="300"
+            image={props.image}
+            alt={props.alt}
+          />
+          <CardContent sx={{ textAlign: "center" }}>
+            <CardActions
+              sx={{ justifyContent: "center", bgcolor: "primary.main" }}
             >
-              <ExpandMoreIcon />
-            </ExpandMore>
-          </CardActions>
-          <Collapse in={expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              {/* PROPS: DESCRIPTION */}
-              <Typography paragraph>{props.description}</Typography>
-              <br />
+              <ExpandMore
+                expand={expanded}
+                onClick={handleExpandClick}
+                aria-expanded={expanded}
+                aria-label="show more"
+              >
+                <ExpandMoreIcon />
+              </ExpandMore>
+            </CardActions>
+            <Collapse in={expanded} timeout="auto" unmountOnExit>
+              <CardContent>
+                {/* PROPS: DESCRIPTION */}
+                <Typography paragraph>{props.description}</Typography>
+                <br />
 
-              <Typography paragraph>
-                {/* PROPS: GH LINK */}
-                <a
-                  className="site-links"
-                  href={props.githubLink}
-                  target="_blank"
-                >
-                  GitHub Repository
-                </a>
-              </Typography>
-              <Typography paragraph>
-                {/* PROPS: DEPLOY LINK */}
-                <p>{props.disclaimer}</p>
-              </Typography>
-            </CardContent>
-          </Collapse>
-        </CardContent>
+                <Typography paragraph>
+                  {/* PROPS: GH LINK */}
+                  <a
+                    className="site-links"
+                    href={props.githubLink}
+                    target="_blank"
+                  >
+                    GitHub Repository
+                  </a>
+                </Typography>
+                <Typography paragraph>
+                  {/* PROPS: DEPLOY LINK */}
+                  <p>{props.disclaimer}</p>
+                </Typography>
+              </CardContent>
+            </Collapse>
+          </CardContent>
+        </motion.div>
       </Card>
     </>
   );

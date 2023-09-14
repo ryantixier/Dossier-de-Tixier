@@ -21,14 +21,32 @@ export default function Resume() {
         transition={{ ease: "easeOut", duration: 2, delay: 0.2 }}
       >
         <div className="page-content" style={{ textAlign: "center" }}>
-          <Button
-            color="primary"
-            variant="contained"
-            href={resume}
-            download="RT-Resume"
+          <motion.div
+            className="resumePreview"
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 1,
+              delay: 0.2,
+            }}
+          ></motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 1,
+              delay: 0.2,
+            }}
           >
-            Download Resume
-          </Button>
+            <Button
+              color="primary"
+              variant="contained"
+              href={resume}
+              download="RT-Resume"
+            >
+              Download Resume
+            </Button>
+          </motion.div>
         </div>
       </motion.div>
       <motion.h2
@@ -45,14 +63,23 @@ export default function Resume() {
         transition={{ ease: "easeOut", duration: 2, delay: 0.6 }}
       >
         <div className="page-content">
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>JavaScript</p>
-          <p>React.js</p>
-          <p>Node.js</p>
-          <p>Git</p>
-          <p>Agile Software Development</p>
-          {/* map() ^THIS^ OUT */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 1,
+              delay: 0.6,
+            }}
+          >
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>React.js</p>
+            <p>Node.js</p>
+            <p>Git</p>
+            <p>Agile Software Development</p>
+            {/* map() ^THIS^ OUT */}
+          </motion.div>
         </div>
       </motion.div>
       <br />

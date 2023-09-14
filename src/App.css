@@ -94,6 +94,14 @@
   margin-right: 10%;
 }
 
+.resumePreview {
+  background-image: url("/src/assets/images/myResume.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
 /* overrides default link color */
 .site-links {
   color: rgb(196, 175, 237);
