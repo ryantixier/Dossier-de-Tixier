@@ -61,15 +61,19 @@
   opacity: 0.4;
   height: 20px;
   width: 20px;
+  margin-left: 10px;
 }
 
 /* make dots larger than antd default for carousel */
 .ant-carousel .slick-dots li.slick-active button {
   opacity: 1;
   background: rgb(196, 175, 237);
-  height: 20px;
-  width: 20px;
-  border-radius: 10px;
+  height: 23px;
+  width: 23px;
+  /* border-radius: 10px; */
+  border: 2px solid aliceblue;
+  border-style: groove;
+  margin-left: 10px;
 }
 
 /* formatting for mui cards; had to override certain defaults */
@@ -96,6 +100,7 @@
   margin-right: 10%;
 }
 
+/* used for a preview of resume in Resume page, Resume card */
 .resumePreview {
   background-image: url("/src/assets/images/myResume.png");
   background-repeat: no-repeat;

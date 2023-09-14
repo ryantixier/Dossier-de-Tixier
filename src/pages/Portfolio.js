@@ -27,7 +27,7 @@ const m3c = {
   title: "Random Password Generator",
   description:
     "Tired of thinking of new passwords? This vanilla Javascript project generates a random password using a mixture of uppercase and lowercase letters, special characters, and numbers, based on your preference!",
-  deployLink: "https://ryantixier.github.io/M4C-code-quiz/",
+  deployLink: "https://ryantixier.github.io/M3C-password-generator/",
   githubLink: "https://github.com/ryantixier/M3C-password-generator",
 };
 // m4c
