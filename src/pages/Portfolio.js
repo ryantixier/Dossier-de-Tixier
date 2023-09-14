@@ -90,14 +90,16 @@ export default function Portfolio() {
         >
           <div>
             <h3 style={contentStyle}>Project(s)</h3>
-            <PortfolioCard
-              image={workoutWizard.image}
-              alt={workoutWizard.alt}
-              title={workoutWizard.title}
-              description={workoutWizard.description}
-              deployLink={workoutWizard.deployLink}
-              githubLink={workoutWizard.githubLink}
-            />
+            <div className="card-layout">
+              <PortfolioCard
+                image={workoutWizard.image}
+                alt={workoutWizard.alt}
+                title={workoutWizard.title}
+                description={workoutWizard.description}
+                deployLink={workoutWizard.deployLink}
+                githubLink={workoutWizard.githubLink}
+              />
+            </div>
           </div>
           <div>
             <h3 style={contentStyle}>Bootcamp Assignments: Front-end</h3>
