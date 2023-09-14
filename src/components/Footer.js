@@ -53,7 +53,7 @@ export default function Footer() {
       .then(
         (result) => {
           console.log(result.text);
-          handleClickSnack();
+          handleOpenSnack();
         },
         (error) => {
           console.log(error.text);
@@ -67,7 +67,7 @@ export default function Footer() {
 
   // snackbar functionality
   const [openSnack, setOpenSnack] = React.useState(false);
-  const handleClickSnack = () => {
+  const handleOpenSnack = () => {
     setOpenSnack(true);
   };
 

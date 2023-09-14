@@ -8,7 +8,7 @@ import Select from "@mui/material/Select";
 
 import { motion } from "framer-motion";
 
-import RocketRy from "../assets/images/rocketRy.png";
+// import RocketRy from "../assets/images/rocketRy.png";
 
 export default function Nav() {
   const color = "black";
