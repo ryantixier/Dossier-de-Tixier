@@ -23,8 +23,8 @@ const workoutWizard = {
 // m3c
 const m3c = {
   image: require("../assets/images/M3C-password-generator-mock-up.png"),
-  alt: "Random Password Generator",
-  title: "Random Password Generator",
+  alt: "Password Generator",
+  title: "Password Generator",
   description:
     "Tired of thinking of new passwords? This vanilla Javascript project generates a random password using a mixture of uppercase and lowercase letters, special characters, and numbers, based on your preference!",
   deployLink: "https://ryantixier.github.io/M3C-password-generator/",
@@ -33,8 +33,8 @@ const m3c = {
 // m4c
 const m4c = {
   image: require("../assets/images/M4C-code-quiz.png"),
-  alt: "Random Password Generator",
-  title: "Random Password Generator",
+  alt: "Code Quiz",
+  title: "Code Quiz",
   description:
     "Test your JavaScript knowledge with this timed quiz. Warning: time is deducted for every incorrect answer. See if you can finish the quiz and get the high score! ",
   deployLink: "https://ryantixier.github.io/M4C-code-quiz/",
@@ -53,15 +53,16 @@ const m9c = {
     "Click the link to the GitHub repository for more information on how to use the generator.",
 };
 
-// m11c
-const m11c = {
-  image: require("../assets/images/M11C-note-taker.png"),
-  alt: "Note Taker",
-  title: "Note Taker",
+// m13c
+const m13c = {
+  image: require("../assets/images/M13C-e-commerce.png"),
+  alt: "E-Commerce Back-End",
+  title: "E-Commerce Back-End",
   description:
-    "This application is a simple note-taking aide; write down your ideas, tasks, and to-do's in the same place and access them anywhere from the convenience of your device. NOTE: Functionality to delete a note is in progress.",
-  deployLink: "https://immense-hamlet-04654-20b51f7cdbb9.herokuapp.com/",
-  githubLink: "https://github.com/ryantixier/M11C_note-taker",
+    "This application reflects the standard, back-end code that helps e-commerce sites keep track of (create new, update old, and delete from) site inventory.",
+  githubLink: "https://github.com/ryantixier/M13C_E-Commerce-Back-End",
+  disclaimer:
+    "Click the link to the GitHub repository for more information on how to navigate this project.",
 };
 
 const contentStyle = {
@@ -133,13 +134,13 @@ export default function Portfolio() {
                 githubLink={m9c.githubLink}
                 disclaimer={m9c.disclaimer}
               />
-              <PortfolioCard
-                image={m11c.image}
-                alt={m11c.alt}
-                title={m11c.title}
-                description={m11c.description}
-                deployLink={m11c.deployLink}
-                githubLink={m11c.githubLink}
+              <PortfolioBack
+                image={m13c.image}
+                alt={m13c.alt}
+                title={m13c.title}
+                description={m13c.description}
+                githubLink={m13c.githubLink}
+                disclaimer={m13c.disclaimer}
               />
             </div>
           </div>

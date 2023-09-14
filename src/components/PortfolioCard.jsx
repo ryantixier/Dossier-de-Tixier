@@ -2,6 +2,7 @@
 import React from "react";
 import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
+import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
@@ -41,6 +42,8 @@ export const PortfolioCard = (props) => {
             delay: 0.2,
           }}
         >
+          <CardHeader title={props.title} sx={{ textAlign: "center" }} />
+
           <CardMedia
             component="img"
             height="300"
