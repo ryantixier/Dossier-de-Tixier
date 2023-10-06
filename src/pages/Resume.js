@@ -77,6 +77,7 @@ export default function Resume() {
             <p>React.js</p>
             <p>Node.js</p>
             <p>Git</p>
+            <p>Heroku</p>
             <p>Agile Software Development</p>
             {/* map() ^THIS^ OUT */}
           </motion.div>

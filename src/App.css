@@ -94,8 +94,6 @@
 .card-layout {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 /* used for a preview of resume in Resume page, Resume card */
