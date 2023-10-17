@@ -90,3 +90,5 @@ export const PortfolioBack = (props) => {
     </>
   );
 };
+
+export default PortfolioBack;

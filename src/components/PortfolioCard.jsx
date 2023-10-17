@@ -96,3 +96,5 @@ export const PortfolioCard = (props) => {
     </>
   );
 };
+
+export default PortfolioCard;

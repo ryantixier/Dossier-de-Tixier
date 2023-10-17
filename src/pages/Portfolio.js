@@ -1,11 +1,22 @@
+// IMPORTS
+
+// general
 import React from "react";
+import { useEffect } from "react";
+import "../App.css";
+
+// carousel
 import { Carousel } from "antd";
+
+// animation
 import { motion } from "framer-motion";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import "../assets/images/lilguy_with_eyes_workout_wizard_on_trans.png";
-import "../App.css";
-import { PortfolioCard } from "../components/PortfolioCard";
-import { PortfolioBack } from "../components/PortfolioBack";
+import PortfolioCard from "../components/PortfolioCard.jsx";
+import PortfolioBack from "../components/PortfolioBack.jsx";
+import generateCalendar from "antd/es/calendar/generateCalendar";
 
 // PROPS...
 
@@ -75,76 +86,84 @@ const contentStyle = {
 export default function Portfolio() {
   const [dotPosition] = React.useState("top");
 
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <>
-      <h2 className="page-title">MY PORTFOLIO</h2>
+      <h2 className="page-title" data-aos="fade-up" data-aos-delay="100">
+        PORTFOLIO
+      </h2>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeOut", duration: 2 }}
       >
-        <Carousel
-          dotPosition={dotPosition}
-          effect="scrollx"
-          autoplay
-          autoplaySpeed={5000}
-        >
-          <div>
-            <h3 style={contentStyle}>Project(s)</h3>
-            <div className="card-layout">
-              <PortfolioCard
-                image={workoutWizard.image}
-                alt={workoutWizard.alt}
-                title={workoutWizard.title}
-                description={workoutWizard.description}
-                deployLink={workoutWizard.deployLink}
-                githubLink={workoutWizard.githubLink}
-              />
+        <div data-aos="fade-up" data-aos-delay="150">
+          <Carousel
+            dotPosition={dotPosition}
+            effect="scrollx"
+            autoplay
+            autoplaySpeed={5000}
+          >
+            <div>
+              <h3 style={contentStyle}>Project(s)</h3>
+              <div className="card-layout">
+                <PortfolioCard
+                  image={workoutWizard.image}
+                  alt={workoutWizard.alt}
+                  title={workoutWizard.title}
+                  description={workoutWizard.description}
+                  deployLink={workoutWizard.deployLink}
+                  githubLink={workoutWizard.githubLink}
+                />
+              </div>
             </div>
-          </div>
-          <div>
-            <h3 style={contentStyle}>Bootcamp Assignments: Front-end</h3>
-            <div className="card-layout">
-              <PortfolioCard
-                image={m3c.image}
-                alt={m3c.alt}
-                title={m3c.title}
-                description={m3c.description}
-                deployLink={m3c.deployLink}
-                githubLink={m3c.githubLink}
-              />
-              <PortfolioCard
-                image={m4c.image}
-                alt={m4c.alt}
-                title={m4c.title}
-                description={m4c.description}
-                deployLink={m4c.deployLink}
-                githubLink={m4c.githubLink}
-              />
+            <div>
+              <h3 style={contentStyle}>Bootcamp Assignments: Front-end</h3>
+              <div className="card-layout">
+                <PortfolioCard
+                  image={m3c.image}
+                  alt={m3c.alt}
+                  title={m3c.title}
+                  description={m3c.description}
+                  deployLink={m3c.deployLink}
+                  githubLink={m3c.githubLink}
+                />
+                <PortfolioCard
+                  image={m4c.image}
+                  alt={m4c.alt}
+                  title={m4c.title}
+                  description={m4c.description}
+                  deployLink={m4c.deployLink}
+                  githubLink={m4c.githubLink}
+                />
+              </div>
             </div>
-          </div>
-          <div>
-            <h3 style={contentStyle}>Bootcamp Assignments: Back-end</h3>
-            <div className="card-layout">
-              <PortfolioBack
-                image={m9c.image}
-                alt={m9c.alt}
-                title={m9c.title}
-                description={m9c.description}
-                githubLink={m9c.githubLink}
-                disclaimer={m9c.disclaimer}
-              />
-              <PortfolioBack
-                image={m13c.image}
-                alt={m13c.alt}
-                title={m13c.title}
-                description={m13c.description}
-                githubLink={m13c.githubLink}
-                disclaimer={m13c.disclaimer}
-              />
+            <div>
+              <h3 style={contentStyle}>Bootcamp Assignments: Back-end</h3>
+              <div className="card-layout">
+                <PortfolioBack
+                  image={m9c.image}
+                  alt={m9c.alt}
+                  title={m9c.title}
+                  description={m9c.description}
+                  githubLink={m9c.githubLink}
+                  disclaimer={m9c.disclaimer}
+                />
+                <PortfolioBack
+                  image={m13c.image}
+                  alt={m13c.alt}
+                  title={m13c.title}
+                  description={m13c.description}
+                  githubLink={m13c.githubLink}
+                  disclaimer={m13c.disclaimer}
+                />
+              </div>
             </div>
-          </div>
-        </Carousel>
+          </Carousel>
+        </div>
       </motion.div>
     </>
   );

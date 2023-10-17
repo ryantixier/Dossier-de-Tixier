@@ -1,10 +1,21 @@
 import React from "react";
+import { useEffect } from "react";
+
 import resume from "../assets/RT-Resume.pdf";
+
+// mui
 import { Button } from "@mui/material";
 
+// animation
 import { motion } from "framer-motion";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Resume() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <>
       <motion.h2
@@ -12,6 +23,8 @@ export default function Resume() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeOut", duration: 2 }}
+        data-aos="fade-up"
+        data-aos-delay="100"
       >
         RESUME
       </motion.h2>
@@ -20,7 +33,12 @@ export default function Resume() {
         animate={{ opacity: 1 }}
         transition={{ ease: "easeOut", duration: 2, delay: 0.2 }}
       >
-        <div className="page-content" style={{ textAlign: "center" }}>
+        <div
+          className="page-content"
+          style={{ textAlign: "center" }}
+          data-aos="fade-up"
+          data-aos-delay="150"
+        >
           <motion.div
             className="resumePreview"
             initial={{ opacity: 0, scale: 0 }}
@@ -54,6 +72,8 @@ export default function Resume() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeOut", duration: 2, delay: 0.4 }}
+        data-aos="fade-up"
+        data-aos-delay="100"
       >
         SKILLS
       </motion.h2>
@@ -62,7 +82,7 @@ export default function Resume() {
         animate={{ opacity: 1 }}
         transition={{ ease: "easeOut", duration: 2, delay: 0.6 }}
       >
-        <div className="page-content">
+        <div className="page-content" data-aos="fade-up" data-aos-delay="150">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}

@@ -36,10 +36,16 @@
 
 /* refers to specific page title: "About" / "My Portfolio" / "Resume" & "Skills"  */
 .page-title {
+  border-radius: 40%;
+  background-color: rgba(55, 164, 247, 0.7);
+  box-shadow: 0px 0px 10px 10px rgba(55, 164, 247, 0.7);
   color: aliceblue;
   text-align: center;
+  margin: auto;
   margin-top: 5%;
+  margin-bottom: 30px;
   text-shadow: 3px 3px 3px black;
+  width: fit-content;
 }
 
 /* content body of page (<p> elements) */
@@ -90,7 +96,7 @@
   width: 100%;
 }
 
-/* positioning of item cards in My Portfolio */
+/* positioning of item cards in Portfolio */
 .card-layout {
   display: flex;
   flex-wrap: wrap;

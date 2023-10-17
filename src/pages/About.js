@@ -16,9 +16,9 @@ import "aos/dist/aos.css";
 const greetings = {
   header: "GREETINGS",
   description:
-    "My name is Ryan Tixier (last name pronounced T-C-A); I am a certified, full-stack web developer with a specialty in front-end development. I am also a lovable space-nerd, a Rubik's Cube aficionado, and a curious soul. Welcome to my Portfolio!",
+    "My name is Ryan Tixier (last name pronounced T-C-A); I am a certified, full-stack web developer with a specialty in front-end development. I am also a lovable space-nerd, a Rubik's Cube aficionado, and a generally curious soul. Welcome to my Portfolio!",
 };
-const aboutMe = {
+const background = {
   header: "BACKGROUND",
   description:
     "I have spent the past ten years pursuing the realms of Education, Mental Healthcare, and the combination thereof. Although I do hold a lot of love for Mental Healthcare in my heart, I decided to make a career change to web development, for which I have nurtured a strong passion.",
@@ -41,7 +41,10 @@ export default function About() {
         description={greetings.description}
       />
       <br />
-      <AboutCard header={aboutMe.header} description={aboutMe.description} />
+      <AboutCard
+        header={background.header}
+        description={background.description}
+      />
       <br />
       <AboutCard
         header={exploreAway.header}
