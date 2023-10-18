@@ -34,7 +34,7 @@
   width: 200px;
 }
 
-/* refers to specific page title: "About" / "My Portfolio" / "Resume" & "Skills"  */
+/* refers to page title sections: "Greetings/Background/Explore Away" / "Portfolio" / "Resume" & "Skills"  */
 .page-title {
   border-radius: 40%;
   background-color: rgba(55, 164, 247, 0.7);
@@ -104,9 +104,7 @@
 
 /* used for a preview of resume in Resume page, Resume card */
 .resumePreview {
-  background-image: url("/src/assets/images/myResume.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("/src/assets/images/myResume.png") no-repeat cover;
   height: 400px;
   margin-bottom: 10px;
 }

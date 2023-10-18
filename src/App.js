@@ -15,11 +15,9 @@ function App() {
   return (
     <div
       style={{
-        backgroundImage: `url(${backgroundImg})`,
-        minHeight: "100vh",
-        backgroundRepeat: "no-repeat",
+        background: `url(${backgroundImg}) fixed`,
         backgroundSize: "cover",
-        position: "relative",
+        minHeight: "100vh",
       }}
     >
       <Router>
