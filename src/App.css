@@ -104,7 +104,8 @@
 
 /* used for a preview of resume in Resume page, Resume card */
 .resumePreview {
-  background-image: url("/src/assets/images/myResume.png") no-repeat cover;
+  background: url("./assets/images/myResume.png") no-repeat center center;
+  background-size: contain;
   height: 400px;
   margin-bottom: 10px;
 }
