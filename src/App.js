@@ -14,24 +14,22 @@ function App() {
   return (
     <div className="background-img">
       <Router>
-        <div className="flex-column justify-flex-start min-100-vh">
-          <Sparkle
-            color="white"
-            count={20}
-            minSize={7}
-            maxSize={12}
-            overflowPx={0}
-            fadeOutSpeed={0.5}
-            flicker={false}
-          />
-          <div className="container">
-            <Nav />
-            <Routes>
-              <Route path="/" element={<About />} />
-              <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/resume" element={<Resume />} />
-            </Routes>
-          </div>
+        <Sparkle
+          color="white"
+          count={20}
+          minSize={7}
+          maxSize={12}
+          overflowPx={0}
+          fadeOutSpeed={0.5}
+          flicker={false}
+        />
+        <div className="container">
+          <Nav />
+          <Routes>
+            <Route path="/" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
         </div>
       </Router>
       <Footer />
