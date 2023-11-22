@@ -8,7 +8,6 @@ import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
 
 import Sparkle from "react-sparkle";
-import backgroundImg from "./assets/images/AstroRy.jpg";
 import "./App.css";
 
 function App() {

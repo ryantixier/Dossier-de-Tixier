@@ -7,6 +7,10 @@
   /* color: aliceblue; */
 }
 
+body {
+  margin: 0;
+}
+
 .background-img {
   background: url("./assets/images/AstroRy.jpg") fixed;
   background-repeat: no-repeat;
