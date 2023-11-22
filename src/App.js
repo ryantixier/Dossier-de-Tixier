@@ -13,13 +13,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div
-      style={{
-        background: `url(${backgroundImg}) fixed`,
-        backgroundSize: "cover",
-        minHeight: "100vh",
-      }}
-    >
+    <div className="background-img">
       <Router>
         <div className="flex-column justify-flex-start min-100-vh">
           <Sparkle
