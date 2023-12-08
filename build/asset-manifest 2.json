@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f3c74e47.css",
+    "main.js": "/static/js/main.c57a01d6.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/myResume.png": "/static/media/myResume.141556a7d8d23b2bda44.png",
+    "static/media/lilguy_with_eyes_workout_wizard_on_trans.png": "/static/media/lilguy_with_eyes_workout_wizard_on_trans.2e321f61f72028e0470c.png",
+    "static/media/M3C-password-generator-mock-up.png": "/static/media/M3C-password-generator-mock-up.1ecdfa493590a1f9375e.png",
+    "static/media/M9C-README-generator.png": "/static/media/M9C-README-generator.9cf32b2b0f5aa302555e.png",
+    "static/media/M13C-e-commerce.png": "/static/media/M13C-e-commerce.a52bd1ddc0687135ad34.png",
+    "static/media/RT-Resume.pdf": "/static/media/RT-Resume.700a6034ae9ee53a2071.pdf",
+    "static/media/AstroRy.jpg": "/static/media/AstroRy.902cc5bb190f6fee62d2.jpg",
+    "static/media/M4C-code-quiz.png": "/static/media/M4C-code-quiz.540f6437daf966b1e091.png",
+    "index.html": "/index.html",
+    "main.f3c74e47.css.map": "/static/css/main.f3c74e47.css.map",
+    "main.c57a01d6.js.map": "/static/js/main.c57a01d6.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3c74e47.css",
+    "static/js/main.c57a01d6.js"
+  ]
+}
