@@ -14,7 +14,7 @@ body {
 .background-img {
   background: url("./assets/images/AstroRy.jpg") fixed;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
