@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1af1b213.css",
+    "main.js": "/static/js/main.2dfcf9c0.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/myResume.png": "/static/media/myResume.f7585738119910ebcc6b.png",
+    "static/media/lilguy_with_eyes_workout_wizard_on_trans.png": "/static/media/lilguy_with_eyes_workout_wizard_on_trans.2e321f61f72028e0470c.png",
+    "static/media/M3C-password-generator-mock-up.png": "/static/media/M3C-password-generator-mock-up.1ecdfa493590a1f9375e.png",
+    "static/media/M9C-README-generator.png": "/static/media/M9C-README-generator.9cf32b2b0f5aa302555e.png",
+    "static/media/M13C-e-commerce.png": "/static/media/M13C-e-commerce.a52bd1ddc0687135ad34.png",
+    "static/media/AstroRy.jpg": "/static/media/AstroRy.902cc5bb190f6fee62d2.jpg",
+    "static/media/RT-Resume.pdf": "/static/media/RT-Resume.8f87da6b7f12474d25f6.pdf",
+    "static/media/AstroRy-mobile.jpg": "/static/media/AstroRy-mobile.6c1ca88adf6a91d399ec.jpg",
+    "static/media/M4C-code-quiz.png": "/static/media/M4C-code-quiz.540f6437daf966b1e091.png",
+    "index.html": "/index.html",
+    "main.1af1b213.css.map": "/static/css/main.1af1b213.css.map",
+    "main.2dfcf9c0.js.map": "/static/js/main.2dfcf9c0.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1af1b213.css",
+    "static/js/main.2dfcf9c0.js"
+  ]
+}
