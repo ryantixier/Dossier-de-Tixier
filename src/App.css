@@ -134,16 +134,3 @@ body {
 .site-links:hover {
   color: rgb(216, 145, 222);
 }
-
-@media screen and (max-width: 450px) {
-  .background-img {
-    background: url("./assets/images/AstroRy-mobile.jpg") fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    /* min-width: 100%;
-    min-height: 100vh; */
-  }
-}
