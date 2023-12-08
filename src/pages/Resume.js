@@ -95,7 +95,7 @@ export default function Resume() {
             <p>CSS</p>
             <p>JavaScript</p>
             <p>React.js</p>
-            <p>AngularJS</p>
+            <p>Angular</p>
             <p>Node.js</p>
             <p>Git</p>
             <p>Heroku</p>
